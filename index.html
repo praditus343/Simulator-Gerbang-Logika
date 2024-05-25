@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+
         <h1>Simulator Gerbang Logika</h1>
         <div class="gate-selection">
             <label for="gateType">Pilih Gerbang Logika:</label>
@@ -21,27 +22,34 @@
                 <option value="XNOR">XNOR</option>
             </select>
         </div>
+
         <div class="circuit-container">
             <div class="input-container">
                 <div class="input-switch" id="switchA" onclick="toggleSwitch('A')">off</div>
-                <label for="switchA">Input A</label>
+                    <label for="switchA">Input A</label>
                 <div class="indicator" id="indicatorA">0</div>
             </div>
+
             <div class="input-container">
                 <div class="input-switch" id="switchB" onclick="toggleSwitch('B')">off</div>
-                <label for="switchB">Input B</label>
+                    <label for="switchB">Input B</label>
                 <div class="indicator" id="indicatorB">0</div>
             </div>
+
             <div class="gate" id="gate">AND</div>
+
             <div class="output-container">
                 <div class="output-lamp" id="lamp"></div>
-                <label for="lamp">Output</label>
+                    <label for="lamp">Output</label>
                 <div class="indicator" id="indicatorOutput">0</div>
             </div>
+
         </div>
+
         <div class="explanation">
             <p id="explanationText"></p>
         </div>
+        
     </div>
 
     <script src="script.js"></script>
